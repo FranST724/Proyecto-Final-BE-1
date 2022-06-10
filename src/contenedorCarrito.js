@@ -1,22 +1,8 @@
-const { timeStamp } = require('console');
 const fs = require('fs');
 
 class Contenedor {
-	constructor() {
-		this.carritos = [
-			{
-				id: 'carrito0',
-				timeStamp: Date.now(),
-				productos: {
-					title: 'producto0',
-					price: '23',
-					thumbnail: '',
-					id: 0,
-					stock: '12',
-					timeStamp: Date.now()
-				}
-			}
-		];
+	constructor(file) {
+		this.file = file;
 	}
 
 	async save(objeto) {

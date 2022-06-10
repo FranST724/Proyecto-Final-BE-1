@@ -2,7 +2,9 @@ const Contenedor = require('../contenedor');
 const { Router } = require('express');
 const router = Router();
 
-let contenedor = new Contenedor('productosDB.txt');
+let contenedor = new Contenedor('productos.txt');
+
+const Admin = true;
 
 router.get('/', async (req, res) => {
 	console.log('Mostrando todos los productos');

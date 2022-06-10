@@ -1,0 +1,8 @@
+[
+					title: 'producto0',
+					price: '23',
+					thumbnail: '',
+					id: 0,
+					stock: '12',
+					timeStamp: Date.now()
+		];
